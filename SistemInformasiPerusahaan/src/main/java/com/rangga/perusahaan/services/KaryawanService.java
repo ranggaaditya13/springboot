@@ -33,10 +33,8 @@ public class KaryawanService {
 	public List<Map<String, Object>> getAllData(){
 		return kr.getAllData();
 	}
+
 	
-	/*
-	 * public void deleteData(String nis) { kr.deleteById(nis); }
-	 */
 	public int deleteDataQuery(String nis) {
 		return kr.deleteDataQuery(nis);
 	}

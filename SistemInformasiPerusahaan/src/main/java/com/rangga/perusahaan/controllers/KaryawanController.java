@@ -43,10 +43,11 @@ public class KaryawanController {
 	}
 	
 	@RequestMapping("/update")
-	public void updateData (@RequestBody KaryawanModel km){
+	public String updateData (@RequestBody KaryawanModel km){
 		ks.updateData(km.getNama(),km.getTempatLahir(),km.getTanggalLahir(),
 		km.getAlamat(),km.getNoHp(),km.getNis());
 		log.info("Data Berhasil di ubah");
+		return "data Berhasil diubah";
 		}
 	
 	
