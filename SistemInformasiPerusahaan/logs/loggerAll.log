@@ -1111,3 +1111,7 @@ java.sql.SQLSyntaxErrorException: Unknown column 'is_delete' in 'field list'
 2021-12-01 11:02:32,351 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2021-12-01 11:02:32,358 [http-nio-8080-exec-2] INFO  com.rangga.perusahaan.controllers.KaryawanController - Data Berhasil Dihapus
 2021-12-01 11:02:51,202 [http-nio-8080-exec-3] INFO  com.rangga.perusahaan.controllers.KaryawanController - Data Berhasil Diambil
+2021-12-01 16:48:49,878 [RMI TCP Connection(598)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2021-12-01 16:48:50,075 [RMI TCP Connection(598)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:48:50,100 [RMI TCP Connection(598)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown initiated...
+2021-12-01 16:48:50,306 [RMI TCP Connection(598)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Shutdown completed.
