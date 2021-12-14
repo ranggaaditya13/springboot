@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+	     <RollingFile name="file" fileName="logs/mongodb.log" 
+                 filePattern="logs/mongodb.%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d [%t] %-5p %c - %m%n" />
+            <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.ra.company" level="debug" additivity="false">
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="LogToConsole"/>
+        </Logger>
+        
+        <Root level="info">
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="LogToConsole"/>
+        </Root>
+    </Loggers>
+</Configuration>
